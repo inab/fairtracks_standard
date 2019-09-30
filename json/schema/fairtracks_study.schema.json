@@ -82,7 +82,7 @@
                     "description": "IRI linking to an EFO ontology term",
                     "type": "string",
                     "format": "term",
-                    "ontology": "http://www.ebi.ac.uk/efo/efo.owl",
+                    "ontology": "https://github.com/EBISPOT/efo/releases/download/v3.5.1/efo.owl",
                     "matchType": "exact"
                 },
                 "term_value": {
