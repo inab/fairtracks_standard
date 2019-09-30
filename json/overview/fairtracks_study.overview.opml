@@ -31,7 +31,7 @@
 <body>
 <outline const="FAIRification of Genomic Tracks JSON Schema - Study" text="#title" type="string" />
 <outline const="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json" description="The JSON schema absolute URI. Used for link JSON data to a particular version of the JSON schema. Must match the value of '$id' in the linked schema" format="iri" required="false" text="@schema" type="string" />
-<outline description="Global study identifier, resolvable by identifiers.org" examples="GEO:GSE35583" format="curie" matchType="canonical" namespace="?" required="true" text="global_id" type="string" />
+<outline description="Global study identifier, resolvable by identifiers.org" examples="GEO:GSE35583" format="curie" matchType="canonical" namespace="geo" required="true" text="global_id" type="string" />
 <outline description="Submitter-local identifier (within investigation/hub) for study" examples="UW_ChipSeq" required="true" text="local_id" type="string" unique="true" />
 <outline description="Name of the study" examples="Histone Modifications by ChIP-seq from ENCODE/University of Washington" required="true" text="study_name" type="string" />
 <outline required="false" text="publications" type="array">
