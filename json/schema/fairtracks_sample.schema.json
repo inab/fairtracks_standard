@@ -32,10 +32,14 @@
             "type": "object",
             "properties": {
                 "term_iri": {
-                    "description": "IRI linking to an EFO ontology term",
+                    "description": "IRI linking to an EFO, CL or CLO ontology term",
                     "type": "string",
                     "format": "term",
-                    "ontology": "https://github.com/EBISPOT/efo/releases/download/v3.5.1/efo.owl",
+                    "ontology": [
+                        "https://raw.githubusercontent.com/obophenotype/cell-ontology/v2019-08-12/cl.owl",
+                        "https://raw.githubusercontent.com/CLO-ontology/CLO/0e44a0731e24004c964484e1959f6396c0d9ecc9/src/ontology/clo.owl",
+                        "https://github.com/EBISPOT/efo/releases/download/v3.5.1/efo.owl"
+                    ],
                     "matchType": "exact"
                 },
                 "term_value": {
