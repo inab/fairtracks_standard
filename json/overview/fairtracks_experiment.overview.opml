@@ -35,8 +35,8 @@
 <outline description="Submitter-local identifier (within investigation/hub) for experiment (in curie-format, if applicable)" examples="encode:ENCSR000DQP" required="true" text="local_id" type="string" unique="true" />
 <outline description="Reference to the study that generated the sample (using the submitter-local identifier of the study)" examples="UW_ChipSeq" foreignProperty="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json#local_id" format="foreign_ref" required="true" text="study_ref" type="string" />
 <outline anyOf="true" description="Reference to the sample of the experiment (using the submitter-local identifier of the sample)" examples="GEO:GSM945229" foreignProperty="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_sample.schema.json#local_id" format="foreign_ref" required="false" text="sample_ref" type="string" />
-<outline anyOf="true" description="References to external experiments used as basis for aggregated data generation (using global experiment identifiers, resolvable by identifiers.org)" required="false" text="aggregated_from" type="array">
-<outline text="" format="curie" matchType="canonical" minItems="1" type="string" />
+<outline anyOf="true" description="References to external experiments used as basis for aggregated data generation (using global experiment identifiers, resolvable by identifiers.org)" required="false" text="aggregated_from" type="array" minItems="1">
+<outline text="" format="curie" matchType="canonical" type="string" />
 </outline>
 <outline required="true" text="tech_type" type="object">
 <outline description="Type of technology (IRI linking to an OBI ontology term)" examples="http://purl.obolibrary.org/obo/OBI_0000716" format="term" matchType="exact" ontology="http://purl.obolibrary.org/obo/obi/2018-08-27/obi.owl" required="true" text="term_iri" type="string" />

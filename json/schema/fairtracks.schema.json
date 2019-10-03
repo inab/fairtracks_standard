@@ -1,50 +1,50 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json",
-    "title": "FAIRification of Genomic Tracks JSON Schema",
-    "type": "object",
+    "$schema": "http://json-schema.org/draft-07/schema#", 
+    "$id": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json", 
+    "title": "FAIRification of Genomic Tracks JSON Schema", 
+    "type": "object", 
     "properties": {
         "@schema": {
-            "description": "The JSON schema absolute URI. Used for link JSON data to a particular version of the JSON schema. Must match the value of '$id' in the linked schema",
-            "const": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json",
-            "type": "string",
+            "description": "The JSON schema absolute URI. Used for link JSON data to a particular version of the JSON schema. Must match the value of '$id' in the linked schema", 
+            "const": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json", 
+            "type": "string", 
             "format": "iri"
-        },
+        }, 
         "studies": {
-            "type": "array",
+            "type": "array", 
+            "minItems": 1, 
             "items": {
-                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json",
-                "minItems": 1
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json"
             }
-        },
+        }, 
         "experiments": {
-            "type": "array",
+            "type": "array", 
+            "minItems": 1, 
             "items": {
-                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_experiment.schema.json",
-                "minItems": 1
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_experiment.schema.json"
             }
-        },
+        }, 
         "samples": {
-            "type": "array",
+            "type": "array", 
+            "minItems": 1, 
             "items": {
-                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_sample.schema.json",
-                "minItems": 1
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_sample.schema.json"
             }
-        },
+        }, 
         "tracks": {
-            "type": "array",
+            "type": "array", 
+            "minItems": 1, 
             "items": {
-                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_track.schema.json",
-                "minItems": 1
+                "$ref": "https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_track.schema.json"
             }
         }
-    },
+    }, 
     "required": [
-        "@schema",
-        "studies",
-        "experiments",
-        "samples",
+        "@schema", 
+        "studies", 
+        "experiments", 
+        "samples", 
         "tracks"
-    ],
-    "additionalProperties": false
+    ], 
+    "additionalProperties": true
 }

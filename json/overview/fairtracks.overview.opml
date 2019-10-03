@@ -33,17 +33,17 @@
   <body>
     <outline text="#title" const="FAIRification of Genomic Tracks JSON Schema" type="string"/>
     <outline text="@schema" description="The JSON schema absolute URI. Used for link JSON data to a particular version of the JSON schema. Must match the value of &apos;$id&apos; in the linked schema" required="true" const="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks.schema.json" type="string" format="iri"/>
-    <outline text="studies" required="true" type="array">
-      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json" minItems="1"/>
+    <outline text="studies" required="true" type="array" minItems="1">
+      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_study.schema.json"/>
     </outline>
-    <outline text="experiments" required="true" type="array">
-      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_experiment.schema.json" minItems="1"/>
+    <outline text="experiments" required="true" type="array" minItems="1">
+      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_experiment.schema.json"/>
     </outline>
-    <outline text="samples" required="true" type="array">
-      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_sample.schema.json" minItems="1"/>
+    <outline text="samples" required="true" type="array" minItems="1">
+      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_sample.schema.json"/>
     </outline>
-    <outline text="tracks" required="true" type="array">
-      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_track.schema.json" minItems="1"/>
+    <outline text="tracks" required="true" type="array" minItems="1">
+      <outline text="" ref="https://raw.githubusercontent.com/fairtracks/fairtracks_standard/master/json/schema/fairtracks_track.schema.json"/>
     </outline>
   </body>
 </opml>

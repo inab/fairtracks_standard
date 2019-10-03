@@ -34,8 +34,8 @@
 <outline description="Global study identifier, resolvable by identifiers.org" examples="GEO:GSE35583" format="curie" matchType="canonical" namespace="geo|ega.study" required="true" text="global_id" type="string" />
 <outline description="Submitter-local identifier (within investigation/hub) for study" examples="UW_ChipSeq" required="true" text="local_id" type="string" unique="true" />
 <outline description="Name of the study" examples="Histone Modifications by ChIP-seq from ENCODE/University of Washington" required="true" text="study_name" type="string" />
-<outline required="false" text="publications" type="array">
-<outline text="" description="Pubmed identifiers (dataset or publication)" examples="22955617" format="curie" matchType="loose" minItems="1" namespace="pubmed" type="string" />
+<outline required="false" text="publications" type="array" minItems="1">
+<outline text="" description="Pubmed identifiers (dataset or publication)" examples="22955617" format="curie" matchType="loose" namespace="pubmed" type="string" />
 </outline>
 <outline description="Contact information for study" required="true" text="contact" type="object">
 <outline description="Name of contact person/organization" examples="ENCODE DCC" required="true" text="name" type="string" />
