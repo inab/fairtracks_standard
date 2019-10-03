@@ -106,5 +106,5 @@
         "contact",
         "phenotype"
     ],
-    "additionalProperties": true
+    "additionalProperties": false
 }
