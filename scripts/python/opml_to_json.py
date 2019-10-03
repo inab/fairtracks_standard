@@ -127,7 +127,7 @@ def _json_schema_add_child_to_parent(element, json_child, json_parent):
 
 
 def _json_schema_add_end_root_attribs(json_dict):
-    json_dict['additionalProperties'] = False
+    json_dict['additionalProperties'] = True
     # json_dict['primary_key'] = []
     return json_dict
 
